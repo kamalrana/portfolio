@@ -9,6 +9,7 @@ import Certifications from '@/components/Certifications';
 import Timeline from '@/components/Timeline';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -27,6 +28,7 @@ function App() {
       </main>
       <Footer />
       <ScrollToTop threshold={300} />
+      <Analytics />
     </div>
   );
 }
